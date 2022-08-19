@@ -1,9 +1,9 @@
 # antv-x6-html2
 HTML components for building x6 editors
 
-1. 这里参照single-spa的接口，只使用了其中的mount+unmount，这样抽象带来的好处不仅限于react/vue，也可以使用其他框架实现自定义节点
+1. 这里参照`single-spa`的接口，只使用了其中的`mount`+`unmount`，这样抽象带来的好处不仅限于`react`/`vue`，也可以使用其他框架实现自定义节点
 2. 不管用户使用什么框架实现自定义节点，都可以在传递进来的`mount`函数里面拿到`node`监听`change:data`事件更新自己的UI，实现一些自定义的交互逻辑
-3. 这里注册的HTML2.View(html2-view)针对一些可点击的html组件屏蔽了`onMouseUp`+`onMouseDown`避免这两个事件触发`x6`内部的选择和拖拽逻辑
+3. 这里注册的`HTML2.View`(`html2-view`)针对一些可点击的html组件屏蔽了`onMouseUp`+`onMouseDown`避免这两个事件触发`x6`内部的选择和拖拽逻辑
 
 ## 第三方集成
 
