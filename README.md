@@ -1,5 +1,8 @@
 # antv-x6-html2
-HTML components for building x6 editors
+
+another `@antv/x6`` html shape, using `single-spa` life cycle hook.  
+
+扩展`@antv/x6`内置`html`节点，使用类似`single-spa`的生命周期钩子  
 
 1. 这里参照`single-spa`的接口，只使用了其中的`mount`+`unmount`，这样抽象带来的好处不仅限于`react`/`vue`，也可以使用其他框架实现自定义节点
 2. 不管用户使用什么框架实现自定义节点，都可以在传递进来的`mount`函数里面拿到`node`监听`change:data`事件更新自己的UI，实现一些自定义的交互逻辑
