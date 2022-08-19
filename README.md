@@ -8,11 +8,16 @@ HTML components for building x6 editors
 ## 第三方集成
 
 ### [antv-x6-react](https://github.com/lloydzhou/antv-x6-react)
-1. 将x6的各种`shape`注册成原生的`vue`组件使用
+1. 将x6的各种`shape`注册成原生的`vue`组件使用（核心思想是把x6退化成一个`view`开发者自己处理数据扭转）
 2. 同时支持使用`react`自定义节点（内部有使用一个`DateWatcher`自动监听`change:data`）
 3. 初始版本是使用`@antv/x6-react-shape`来自定义节点，但是后来换成使用`antv-x6-html2`
 4. 内置一个默认的Portal，会在`Portal.getProvider()`返回的这个组件挂载的时候，自动使用portal渲染所有的自定义组件
 5. 有实现一些常用的组件`Background`, `Clipboard`, `Grid`, `Mousewheel`, `Selection`, `Snapline`, `MiniMap`, `ContextMenu`等widgets
+
+#### online demos
+1. [基础示例](https://codesandbox.io/s/antv-x6-react-demo-jjvcv0)使用了`antd`的`InputNumber`（一个带按钮的输入框）展示了自定义组件如何做到和x6做数据交互
+2. [swimlane 泳道图](https://codesandbox.io/s/antv-x6-react-swimlane-uy01jp)参照`x6`官方示例实现
+3. [DAG画布](https://codesandbox.io/s/antv-x6-react-dag-m8vcgb)参照`x6`官方的DAG示例实现`AlgoNode`的节点逻辑与官方示例相比较处理起来更简单
 
 
 ## TODO
