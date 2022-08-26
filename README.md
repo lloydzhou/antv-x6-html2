@@ -1,6 +1,6 @@
 # antv-x6-html2
 
-another `@antv/x6`` html shape, using `single-spa` life cycle hook.  
+another `@antv/x6` html shape, using `single-spa` life cycle hook.  
 
 扩展`@antv/x6`内置`html`节点，使用类似`single-spa`的生命周期钩子  
 
