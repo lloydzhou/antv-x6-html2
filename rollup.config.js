@@ -9,18 +9,16 @@ export default {
   input: './src/index.ts',
   output: [
     {
-      name: 'x6-react',
+      name: 'x6-html2',
       format: 'umd',
       file: 'dist/index.js',
       sourcemap: true,
       globals: {
-        react: 'React',
-        'react-dom': 'ReactDom',
         '@antv/x6': 'X6',
       },
     }
   ],
-  external: ['@antv/x6', 'react', 'react-dom'],
+  external: ['@antv/x6'],
   plugins: [
     typescript({ declaration: false }),
     resolve(),
