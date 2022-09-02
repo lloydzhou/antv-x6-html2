@@ -12,7 +12,7 @@ another `@antv/x6` html shape, using `single-spa` life cycle hook.
 
 ### [antv-x6-react](https://github.com/lloydzhou/antv-x6-react)
 1. 将x6的各种`shape`注册成原生的`vue`组件使用（核心思想是把x6退化成一个`view`开发者自己处理数据扭转）
-2. 同时支持使用`react`自定义节点（内部有使用一个`DateWatcher`自动监听`change:data`）
+2. 同时支持使用`react`自定义节点（内部有使用一个`DataWatcher`自动监听`change:data`）
 3. 初始版本是使用`@antv/x6-react-shape`来自定义节点，但是后来换成使用`antv-x6-html2`
 4. 内置一个默认的Portal，会在`Portal.getProvider()`返回的这个组件挂载的时候，自动使用portal渲染所有的自定义组件
 5. 有实现一些常用的组件`Background`, `Clipboard`, `Grid`, `Mousewheel`, `Selection`, `Snapline`, `MiniMap`, `ContextMenu`等widgets
