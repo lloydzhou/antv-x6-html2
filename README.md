@@ -25,10 +25,13 @@ another `@antv/x6` html shape, using `single-spa` life cycle hook.
 5. [展开收起树形图](https://codesandbox.io/s/antv-x6-react-expand-tree-jfrnnz)参照`x6`官方的示例
 
 
-## TODO
 ### [antv-x6-vue](https://github.com/lloydzhou/antv-x6-vue)
 1. 这个库实现的功能和[antv-x6-react](https://github.com/lloydzhou/antv-x6-react)基本一致
-2. 当前还是使用`@antv/x6-vue-shape`实现的，后续也会切换到`antv-x6-html2`这边
+2. ~~当前还是使用`@antv/x6-vue-shape`实现的，后续也会切换到`antv-x6-html2`这边~~
+3. 已经切换使用`antv-x6-html2`
+
+#### online demos
+3. [DAG画布](https://codesandbox.io/s/antv-x6-vue-dag-utiy62)参照`x6`官方的DAG示例实现`AlgoNode`的节点逻辑与官方示例相比较处理起来更简单
 
 
 
