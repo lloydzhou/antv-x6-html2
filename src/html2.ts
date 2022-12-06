@@ -6,7 +6,20 @@ export namespace HTML2 {
   export class View extends NodeView {
     protected init() {
       super.init()
-      Dom.requestAnimationFrame(() => this.mount())
+      this.onRenderDone().then(this.mount)
+    }
+
+    onRenderDone() {
+      // 兼容异步渲染模式
+      return new Promise((resolve) => {
+        this.cell.model.on('cell:added', () => {
+          if (this.graph.isAsync()) {
+            this.graph.on('render:done', () => this.selectors && resolve())
+          } else {
+            Dom.requestAnimationFrame(resolve)
+          }
+        })
+      })
     }
   
     mount() {
